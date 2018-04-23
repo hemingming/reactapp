@@ -4,9 +4,7 @@
 const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const CompressionPlugin = require('compression-webpack-plugin')
 
-// __dirname nodejs 全局变量 指当前执行脚本所在目录
 module.exports = {
 	entry: __dirname + '/src/main.js',
 	output: {
@@ -36,7 +34,7 @@ module.exports = {
 		]
 	},
 	resolve: {
-    	extensions: ['.js', '.json', 'css', '.styl', '.png', '.jpg', '.svg', 'jsonp']
+    	extensions: ['.js', '.jsx', 'css', '.styl', '.png', '.jpg', '.svg', '.json', 'jsonp']
     },
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),	//热模块替换插件
