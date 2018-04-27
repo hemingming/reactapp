@@ -44,10 +44,21 @@ module.exports = {
 	],
 
 	devServer: {
-		contentBase: path.join(__dirname, 'dist'),
+		contentBase: path.join(__dirname, './dist'),
   		compress: true,
   		port: 8080,
-  		open: true
+  		open: true,
+  		historyApiFallback: true,
+  		hot: true,
+  		inline: true,
+  		progress: true,
+  		proxy: {
+			"/doubanapi": {
+				target: "http://db.miaov.com",
+				secure: false,
+				changeOrigin: true
+			}
+  		}
 	}
 
 }

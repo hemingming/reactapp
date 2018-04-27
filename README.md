@@ -1,1 +1,1 @@
-## Webpack React Redux Stylus react-router-dom
+## Webpack React Redux Stylus JSX

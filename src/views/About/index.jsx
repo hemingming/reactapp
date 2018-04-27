@@ -1,7 +1,10 @@
 import React from 'react'
 import ReactDom from 'react-dom'
+import {Link} from 'react-router-dom'
 import { createStore } from 'redux'
-import Hello from '../../components/hello/hello.jsx'
+import protrait from '../../../static/redux.png'
+import Counter from '../../components/counter/index.jsx'
+import ReduxCounter from '../../components/reduxcounter/index.jsx'
 
 /*
 class Home extends React.Component {
@@ -13,7 +16,7 @@ class Home extends React.Component {
 }
 */
 
-const defaultState = 0
+/*const defaultState = 0
 
 function counter(state = defaultState, action) {
 	switch (action.type) {
@@ -35,15 +38,18 @@ store.subscribe(() =>
 function reduxAction() {
 	store.dispatch({ type: 'INCREMENT' })
 }
-
+*/
 
 
 
 
 const About = () => (
   <div>
-    <h3 onClick={reduxAction}> About rudex action </h3>
-    <Hello/>
+  	<Link to="/">Home</Link>
+    <h3> About rudex action </h3>
+    <img src={protrait} />
+    <Counter/>
+    <ReduxCounter/>
   </div>
 )
 
