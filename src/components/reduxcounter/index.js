@@ -2,13 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 class ReduxCounter extends React.Component {
-	// state = { count: 0 }
 
 	constructor(props){
 		super(props)
-		this.state = { 
-			// count: 0 
-		}
 		this.increment = this.increment.bind(this)
 		this.decrement = this.decrement.bind(this)
 	}
@@ -31,7 +27,6 @@ class ReduxCounter extends React.Component {
 			</div>
 		)
 	}
-
 }
 
 function mapStateToProps(state) {
@@ -40,5 +35,4 @@ function mapStateToProps(state) {
 	};
 }
 
-// export default reduxCounter
 export default connect(mapStateToProps)(ReduxCounter)
