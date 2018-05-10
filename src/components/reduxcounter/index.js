@@ -27,7 +27,7 @@ class ReduxCounter extends React.Component {
 			</div>
 		)
 	}
-}
+} 
 
 function mapStateToProps(state) {
 	return {

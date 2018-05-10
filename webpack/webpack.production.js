@@ -6,9 +6,9 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-	entry: __dirname + '/src/main.js',
+	entry: path.resolve(__dirname, '../src/main.js'),
 	output: {
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, '../dist'),
 		filename: 'bundle.js'
 	},
 	devtool: 'eval-source-map',
@@ -39,12 +39,12 @@ module.exports = {
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),	//热模块替换插件
 		new HtmlWebpackPlugin({
-			template: 'index.html'
+			template: path.resolve(__dirname, '../index.html')
 		})
 	],
 
 	devServer: {
-		contentBase: path.join(__dirname, './dist'),
+		contentBase: path.join(__dirname, '../dist'),
   		compress: true,
   		port: 8080,
   		open: true,
