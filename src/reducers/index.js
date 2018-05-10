@@ -1,25 +1,16 @@
 /*
  * redux @ reducer
+ * index.js
  */
 
-const defaultState = {
-	count: 0
-}
 
+import { combineReducers } from 'redux'
+import todos from './todos'
+import visibilityFilter from './visibilityFilter'
+import Counter from './counter'
 
-const reducer = (state = defaultState, action) => {
-	switch(action.type) {
-		case 'INCREMENT':
-		return {
-			count: state.count + 1
-		};
-		case 'DECREMENT':
-		return {
-			count: state.count - 1
-		};
-		default:
-		return state;
-	}
-}
-
-export default reducer
+export default combineReducers({
+  todos,
+  visibilityFilter,
+  Counter
+})

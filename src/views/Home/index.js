@@ -6,6 +6,7 @@ import Hello from '../../components/hello'
 const Home = () => (
 	<div>
 		<Link to="/about">About</Link><br/>
+		<Link to="/reduces">reduces</Link><br/>
 		<Hello/>
 	</div>
 )
