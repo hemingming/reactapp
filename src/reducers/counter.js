@@ -3,25 +3,11 @@
  * counter.js
  */
 
-/*
-const defaultState = {
+const defaultCount = {
 	count: 0
 }
 
-const counters = (state = defaultState, action) => {
-	const count = state.count
-	switch (action.type) {
-		case 'INCREMENT':
-		  return { count: count + 1 }
-		case 'DECREMENT':
-		  return { count: count - 1 }
-		default:
-		  return state
-	  }
-}
-*/
-
-const Counter = (state = {count : 0}, action) => {
+const Counters = (state = defaultCount, action) => {
 	switch(action.type) {
 		case 'INCREMENT':
 		return {
@@ -36,4 +22,4 @@ const Counter = (state = {count : 0}, action) => {
 	}
 }
 
-export default Counter
+export default Counters

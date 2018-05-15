@@ -5,17 +5,6 @@
 
 let nextTodoId = 0
 
-export const incrementAction = value => ({
-  type: 'INCREMENT',
-  value
-})
-
-export const decrementAction = value => ({
-  type: 'DECREMENT',
-  value
-})
-
-
 export const addTodo = text => ({
   type: 'ADD_TODO',
   id: nextTodoId++,
@@ -38,4 +27,12 @@ export const VisibilityFilters = {
   SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
 
+export const incrementAction = count => ({
+  type: 'INCREMENT',
+  count : count
+})
 
+export const decrementAction = count => ({
+  type: 'DECREMENT',
+  count: count
+})

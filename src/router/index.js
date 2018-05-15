@@ -8,7 +8,7 @@ import Home from '../views/Home'
 import About from '../views/About'
 import Reduces from '../components/todo'
 
-const Routerapp = () => (
+const Routers = () => (
 	<Router>
 		<Switch>
 			<Route exact path="/" component={Home} />
@@ -17,4 +17,4 @@ const Routerapp = () => (
 		</Switch>
 	</Router>
 )
-export default Routerapp
+export default Routers

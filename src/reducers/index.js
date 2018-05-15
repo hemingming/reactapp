@@ -5,12 +5,13 @@
 
 
 import { combineReducers } from 'redux'
+import Counters from './counter'
 import todos from './todos'
 import visibilityFilter from './visibilityFilter'
-import Counter from './counter'
+
 
 export default combineReducers({
   todos,
   visibilityFilter,
-  Counter
+  Counters
 })
