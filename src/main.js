@@ -3,26 +3,8 @@ import ReactDom from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import Routers from './router'
-// import reducer from './reducers'
+import reducer from './reducers'
 
-const defaultCount = {
-	count: 0
-}
-
-function reducer(state = defaultCount, action) {
-switch(action.type) {
-	case 'INCREMENT':
-	return {
-		count: state.count + 1
-	};
-	case 'DECREMENT':
-	return {
-		count: state.count - 1
-	};
-	default:
-	return state;
-}
-}
 
 // const initialState = {}
 // const enhancer= {}

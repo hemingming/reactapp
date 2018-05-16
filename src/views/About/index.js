@@ -3,7 +3,7 @@ import ReactDom from 'react-dom'
 import {Link} from 'react-router-dom'
 import protrait from '../../../static/images/redux.png'
 import Counters from '../../components/counter'
-import ReduxCounter from '../../components/reduxcounter'
+import ReduxCounter from '../../containers/counter.js'
 
 
 const About = () => (

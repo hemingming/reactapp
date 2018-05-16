@@ -29,10 +29,10 @@ export const VisibilityFilters = {
 
 export const incrementAction = count => ({
   type: 'INCREMENT',
-  count : count
+  count
 })
 
 export const decrementAction = count => ({
   type: 'DECREMENT',
-  count: count
+  count
 })

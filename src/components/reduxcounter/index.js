@@ -18,7 +18,7 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
-        <h2>Counter</h2>
+        <h2>Redux Counter</h2>
         <div>
           <button onClick={this.decrement}>-</button>
           <span>{this.props.count}</span>

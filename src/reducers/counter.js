@@ -7,7 +7,7 @@ const defaultCount = {
 	count: 0
 }
 
-const Counters = (state = defaultCount, action) => {
+const counter = (state = defaultCount, action) => {
 	switch(action.type) {
 		case 'INCREMENT':
 		return {
@@ -22,4 +22,4 @@ const Counters = (state = defaultCount, action) => {
 	}
 }
 
-export default Counters
+export default counter
